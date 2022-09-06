@@ -30,5 +30,10 @@ footer {
 
 #texto {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 35px;
+    font-size: 32px;
+}
+
+#texto2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 45px;
 }
