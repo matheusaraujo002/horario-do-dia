@@ -1,0 +1,34 @@
+body{
+    background-color: dodgerblue;
+    font: normal 15pt Arial;
+    
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+}
+
+section{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 550px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+#texto {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 35px;
+}
