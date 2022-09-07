@@ -3,10 +3,12 @@
     var msg2 = window.document.getElementById('texto2')
     var img = window.document.getElementById('imagem')
     var data = new Date()
+    var fusoHorario = Intl.DateTimeFormat().resolvedOptions().timeZone;
     var hora = data.getHours()
     var minuto = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora} horas e ${minuto} minutos.` 
-    setTimeout(function() {carregar()}, 1000);
+    var segundo = data.getSeconds()
+    msg.innerHTML = `Agora são ${hora} hora(s) ${minuto} minuto(s) e ${segundo} segundo(s). ${fusoHorario}`
+    setTimeout(function() {carregar()}, 500);
 
     if (hora >= 0 & hora < 12){
         msg2.innerHTML = "Bom Dia!"
@@ -24,4 +26,3 @@
     document.body.style.background = '#1e90ff'
     }
 }
-
