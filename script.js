@@ -13,16 +13,16 @@
     if (hora >= 0 & hora < 12){
         msg2.innerHTML = "Bom Dia!"
     img.innerHTML = '<img src="imgs/foto-manha.png">'
-    document.body.style.background = '#ffe99c'
+    document.body.style.backgroundImage = "url('imgs/bg-manha.jpg')"
     }
     else if (hora >= 12 & hora < 18) {
         msg2.innerHTML = "Boa Tarde!"
     img.innerHTML = '<img src="imgs/foto-tarde.png">'
-    document.body.style.background = '#d0c1c4'
+    document.body.style.backgroundImage = "url('imgs/bg-tarde.jpg')"
     }
     else {
         msg2.innerHTML = "Boa Noite!"
     img.innerHTML = '<img src="imgs/foto-noite.png">'
-    document.body.style.background = '#1e90ff'
+    document.body.style.backgroundImage = "url('imgs/bg-noite.jpg')"
     }
 }
