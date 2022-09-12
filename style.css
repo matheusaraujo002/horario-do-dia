@@ -42,3 +42,10 @@ footer {
 .copy {
     color: aliceblue;
 }
+
+#imagem {
+    border-radius: 10%;
+    padding: 25px;
+    width: 490px;
+    height: 420px;
+}
