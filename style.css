@@ -48,6 +48,7 @@ footer {
     padding: 25px;
     width: 490px;
     height: 400px;
+    cursor: pointer;
 }
 
 #texto3 {
