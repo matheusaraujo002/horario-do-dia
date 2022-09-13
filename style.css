@@ -32,11 +32,13 @@ footer {
 #texto {
     font-family: 'Dancing Script', sans-serif;
     font-size: 25px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
 #texto2 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 45px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
 .copy {
@@ -54,4 +56,42 @@ footer {
 #texto3 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 30px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
+
+    .brasilia {
+        --border-width: 4px;
+        position: relative;
+        left: 24px;
+        justify-content: center;
+        align-items: center;
+        width: 490px;
+        height: 30px;
+        font-family: 'Dancing Script', sans-serif;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+        background: white;
+        border-radius: var(--border-width);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+      }
+      .brasilia::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 5s alternate infinite;
+      }
+      
+      @keyframes moveGradient {
+        50% {
+          background-position: 100% 50%;
+        }
+      }
