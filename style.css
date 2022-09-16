@@ -1,6 +1,7 @@
 body{
     background-color: dodgerblue;
     background-position: top center;
+    background-repeat: no-repeat;
     font: normal 15pt Arial;
     
 }
