@@ -4,7 +4,8 @@
     var msg3 = window.document.getElementById('texto3')
     var data = new Date()
     var fusoHorario = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    var hora = data.getHours()
+    var hora = 19
+    //var hora = data.getHours()
     var minuto = data.getMinutes()
     var segundo = data.getSeconds()
     const month = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
@@ -18,13 +19,16 @@
     if (hora >= 0 & hora < 12){
         msg2.innerHTML = "Bom Dia!"
     document.body.style.backgroundImage = "url('imgs/bg-manha.jpg')"
+    document.body.style.backgroundColor = '#09090b'
     }
     else if (hora >= 12 & hora < 18) {
         msg2.innerHTML = "Boa Tarde!"
     document.body.style.backgroundImage = "url('imgs/bg-tarde.jpg')"
+    document.body.style.backgroundColor = '#151d21'
     }
     else {
         msg2.innerHTML = "Boa Noite!"
     document.body.style.backgroundImage = "url('imgs/bg-noite.jpg')"
+    document.body.style.backgroundColor = '#09090b'
     }
 }

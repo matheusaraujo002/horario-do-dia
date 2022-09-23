@@ -1,6 +1,7 @@
 body{
-    background-color: dodgerblue;
+    background-color: #09090b;
     background-position: top center;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     font: normal 15pt Arial;
     
@@ -50,7 +51,7 @@ footer {
 #imagem {
     border-radius: 10%;
     padding: 25px;
-    width: 490px;
+    width: 500px;
     height: 400px;
     cursor: pointer;
 }
@@ -62,12 +63,13 @@ footer {
 }
 
     .brasilia {
-        --border-width: 4px;
+        border: none;
+        --border-width: 3px;
         position: relative;
         left: 24px;
         justify-content: center;
         align-items: center;
-        width: 490px;
+        width: 500px;
         height: 30px;
         font-family: 'Dancing Script', sans-serif;
         font-size: 20px;
