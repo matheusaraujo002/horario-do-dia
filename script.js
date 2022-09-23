@@ -4,8 +4,7 @@
     var msg3 = window.document.getElementById('texto3')
     var data = new Date()
     var fusoHorario = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    var hora = 19
-    //var hora = data.getHours()
+    var hora = data.getHours()
     var minuto = data.getMinutes()
     var segundo = data.getSeconds()
     const month = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
